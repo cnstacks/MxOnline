@@ -8,6 +8,18 @@
 # Email   : tqtl@tqtl.org
 import xadmin
 from .models import EmailVerifyRecord, Banner
+from xadmin import views
+
+
+class BaseSetting(object):
+    enable_themes = True
+    use_bootswatch = True
+
+
+class GlobalSettings(object):
+    site_title = "慕学后台管理系统"
+    site_footer = "北京晓昭科技有限公司"
+    menu_style = "accordion"
 
 
 class EmailVerifyRecordAdmin(object):
@@ -24,3 +36,5 @@ class BannerAdmin(object):
 
 xadmin.site.register(EmailVerifyRecord, EmailVerifyRecordAdmin)
 xadmin.site.register(Banner, BannerAdmin)
+xadmin.site.register(views.BaseAdminView, BaseSetting)
+xadmin.site.register(views.CommAdminView, GlobalSettings)
