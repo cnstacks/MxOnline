@@ -18,19 +18,19 @@ class CourseAdmin(object):
 
 class LessonAdmin(object):
     list_display = ['course', 'name', 'learn_times', 'add_time']
-    search_fileds = ['course', 'name', 'learn_times', 'add_time']
+    search_fileds = ['course', 'name', 'learn_times']
     list_filter = ['course__name', 'name', 'learn_times', 'add_time']
 
 
 class VideoAdmin(object):
     list_display = ['lesson', 'name', 'learn_times', 'url', 'add_time']
-    search_fileds = ['lesson', 'name', 'learn_times', 'url', 'add_time']
+    search_fileds = ['lesson', 'name', 'learn_times', 'url']
     list_filter = ['lesson', 'name', 'learn_times', 'url', 'add_time']
 
 
 class CourseResourceAdmin(object):
     list_display = ['course', 'name', 'download', 'add_time']
-    search_fileds = ['course', 'name', 'download', 'add_time']
+    search_fileds = ['course', 'name', 'download']
     list_filter = ['course', 'name', 'download', 'add_time']
 
 
