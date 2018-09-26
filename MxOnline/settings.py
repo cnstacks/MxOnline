@@ -30,7 +30,9 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 # Application definition
-
+AUTHENTICATION_BACKENDS = (
+    'users.views.CustomBackend',
+)
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -131,5 +133,5 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,"static")
+    os.path.join(BASE_DIR, "static")
 ]
