@@ -136,3 +136,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
+
+EMAIL_HOST = "smtp.mxhichina.com"
+EMAIL_PORT = 25
+EMAIL_HOST_USER = "tqtl@tqtl.org"
+EMAIL_HOST_PASSWORD = "19691201gZF."
+EMAIL_USE_TLS = False
+EMAIL_FROM = "tqtl@tqtl.org"
