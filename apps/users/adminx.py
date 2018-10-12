@@ -18,7 +18,7 @@ class BaseSetting(object):
 
 class GlobalSettings(object):
     site_title = "慕学后台管理系统"
-    site_footer = "北京晓昭科技有限公司"
+    site_footer = "北京小昭科技有限公司"
     menu_style = "accordion"
 
 

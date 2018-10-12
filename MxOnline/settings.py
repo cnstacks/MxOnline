@@ -137,9 +137,10 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
 
-EMAIL_HOST = "smtp.mxhichina.com"
+EMAIL_HOST = "smtp.163.com"
 EMAIL_PORT = 25
-EMAIL_HOST_USER = "tqtl@tqtl.org"
-EMAIL_HOST_PASSWORD = "19691201gZF."
+EMAIL_HOST_USER = "tqtl911@163.com"
+EMAIL_HOST_PASSWORD = "19930911cXS"
 EMAIL_USE_TLS = False
-EMAIL_FROM = "tqtl@tqtl.org"
+EMAIL_FROM = "tqtl911@163.com"
+

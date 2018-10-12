@@ -31,6 +31,8 @@ def send_register_email(email, send_type="register"):
     email_record.send_type = send_type
     email_record.save()
 
+
+# 定义E-mail的主题与主体内容；
     email_title = ""
     email_body = ""
     if send_type == "register":

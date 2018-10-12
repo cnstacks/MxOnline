@@ -1,6 +1,7 @@
 # _*_ coding:utf-8 _*_
 from django.contrib import admin
 # Register your models here.
+
 # from .models import UserProfile
 #
 #
@@ -9,6 +10,3 @@ from django.contrib import admin
 #
 #
 # admin.site.register(UserProfile, UserProfileAdmin)
-
-
-# 注册xadmin
