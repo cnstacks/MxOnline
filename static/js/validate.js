@@ -99,4 +99,4 @@ $(function(){
         $(this).siblings('i').hide();
         $(this).parent().removeClass('errorput');
     })
-})
+});
