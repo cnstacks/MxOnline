@@ -35,6 +35,6 @@ urlpatterns = [
     url(r'^modify_pwd/$', ModifyPwdView.as_view(), name="modify_pwd"),
     # 课程机构首页;
     url(r'^org_list/$', OrgView.as_view(), name="org_list"),
-    # 配置长传文件的URL处理；
-    url(r'^media/(?P<path>.*)$', serve, {"document_root":MEDIA_ROOT}),
+    # 配置长传文件的URL访问处理；
+    url(r'^media/(?P<path>.*)$', serve, {"document_root": MEDIA_ROOT}),
 ]
